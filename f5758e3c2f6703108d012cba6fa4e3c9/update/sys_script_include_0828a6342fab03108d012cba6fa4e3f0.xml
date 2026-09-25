@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2228927_asset_0.AssetLoanUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>To get info about the avilablity of assets from the assets table.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>AssetLoanUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AssetLoanUtils = Class.create();
+AssetLoanUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    // Returns true/false whether a given asset sys_id is currently available
+    isAssetAvailable: function(assetSysId) {
+        var asset = new GlideRecord("x_2228927_asset_0_asset");
+        if (!asset.get(assetSysId)) {
+            return false;
+        }
+        return asset.status == 'available';
+    },
+    // Server-callable version for GlideAjax (client scripts / widgets)
+    ajaxIsAssetAvailable: function() {
+        var assetSysId = this.getParameter('sysparm_asset_id');
+        return isAssetAvailable(assetSysId).toString();
+    },
+    // Returns a GlideRecord query of all currently available assets,
+    // optionally filtered by category
+    getAvailableAssets: function(category) {
+        var asset = new GlideRecord("x_2228927_asset_0_asset");
+        asset.addQuery('status', "available");
+        if (category) {
+            asset.addQuery('category', category);
+        }
+        asset.query();
+        return asset;
+    },
+    // Counts how many assets are currently on loan (useful for a dashboard/widget later)
+    getOnLoanCount: function() {
+        var assets = new GlideAggregate("x_2228927_asset_0_asset");
+        assets.addQuery("status", "on_loan");
+        assets.addAggregate('COUNT');
+        assets.query();
+        if (assets.next()) {
+            return assets.getAggregate('COUNT');
+        }
+        return 0;
+
+    },
+    type: 'AssetLoanUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:29:43</sys_created_on>
+        <sys_id>0828a6342fab03108d012cba6fa4e3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AssetLoanUtils</sys_name>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name>sys_script_include_0828a6342fab03108d012cba6fa4e3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:29:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

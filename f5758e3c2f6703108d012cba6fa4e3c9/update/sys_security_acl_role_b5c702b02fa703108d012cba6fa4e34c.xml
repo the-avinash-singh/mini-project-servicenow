@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 06:40:43</sys_created_on>
+        <sys_id>b5c702b02fa703108d012cba6fa4e34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2228927_asset_0_asset.x_2228927_asset_0.user</sys_name>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_security_acl display_value="x_2228927_asset_0_asset">25c702b02fa703108d012cba6fa4e31e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b5c702b02fa703108d012cba6fa4e34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:40:43</sys_updated_on>
+        <sys_user_role display_value="x_2228927_asset_0.user" name="x_2228927_asset_0.user">c675ce3c2f6703108d012cba6fa4e31c</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

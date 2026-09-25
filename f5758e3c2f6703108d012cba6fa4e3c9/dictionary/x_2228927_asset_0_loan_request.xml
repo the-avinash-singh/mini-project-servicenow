@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ef690a742fa703108d012cba6fa4e344" label="Loan Request" max_length="40" name="x_2228927_asset_0_loan_request" type="collection">
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Request Date" max_length="255" name="request_date" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_2228927_asset_0_asset" type="reference"/>
+        <element choice="3" default="pending_approval" label="Status" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On Loan" sequence="3" value="on_loan"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="0" value="pending_approval"/>
+                <element inactive_on_update="false" label="Returned" sequence="4" value="returned"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Overdue" sequence="5" value="overdue"/>
+            </choice>
+        </element>
+        <element label="Approved By" max_length="32" name="approved_by" reference="sys_user" type="reference"/>
+        <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="Return Date" max_length="40" name="return_date" type="glide_date"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="asset"/>
+        </index>
+        <index name="index3">
+            <element name="requested_by"/>
+        </index>
+    </element>
+</database>

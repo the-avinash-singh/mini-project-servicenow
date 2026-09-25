@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b02256382fe703108d012cba6fa4e3e3" sys_domain="global" table="x_2228927_asset_0_loan_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-23 07:25:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>342256382fe703108d012cba6fa4e3e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2228927_asset_0_loan_request" name="x_2228927_asset_0_loan_request" sys_domain="global" view="Default view">b02256382fe703108d012cba6fa4e3e3</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_2228927_asset_0_loan_request" sys_domain="global" view="Default view">08790a742fa703108d012cba6fa4e328</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-23 07:25:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-23 07:25:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f82256382fe703108d012cba6fa4e3ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2228927_asset_0_loan_request" name="x_2228927_asset_0_loan_request" sys_domain="global" view="Default view">b02256382fe703108d012cba6fa4e3e3</sys_ui_form>
+            <sys_ui_section caption="More Information" display_value="More Information" name="x_2228927_asset_0_loan_request" sys_domain="global" view="Default view">342256382fe703108d012cba6fa4e3e1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-23 07:25:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_2228927_asset_0_loan_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-23 07:25:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b02256382fe703108d012cba6fa4e3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2228927_asset_0_loan_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b02256382fe703108d012cba6fa4e3e3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-23 07:25:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

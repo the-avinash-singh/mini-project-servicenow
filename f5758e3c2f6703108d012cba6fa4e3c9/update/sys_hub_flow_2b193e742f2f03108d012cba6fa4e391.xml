@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Loan request approval auto assignment and notification to requester about the status changes.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>loan_request_approval_flow</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.requested_by","label":"Trigger - Record Created or Updated➛Loan Request Record➛Requested By","reference":"sys_user","reference_display":"Requested By","type":"reference","base_type":"reference","parent_table_name":"x_2228927_asset_0_loan_request","column_name":"requested_by","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"0e005d72-9e65-4de0-8cdf-91c5f489f216":["approval_reason"],"0ca26447-2776-43eb-84d8-ce1c1ef515f7":["record"],"0aea892b-5eb4-4bf5-9ef9-3223a35bda96":["notification"]},"attributes":null},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Loan Request Record","reference":"x_2228927_asset_0_loan_request","reference_display":"Loan Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"55779de9-dc17-4723-91b5-5c14b0a14e0d":["record"],"0e005d72-9e65-4de0-8cdf-91c5f489f216":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.approved_by.manager","label":"Trigger - Record Created or Updated➛Loan Request Record➛Approved By➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{},"attributes":null},{"name":"Created_1.current.requested_by.manager","label":"Trigger - Record Created➛Loan Request Record➛Requested By➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"48e7d422-c4a5-42ae-a431-d813869f4298":["approval_conditions"]},"attributes":null},{"name":"Created or Updated_1.current.approved_by","label":"Trigger - Record Created or Updated➛Loan Request Record➛Approved By","reference":"sys_user","reference_display":"Approved By","type":"reference","base_type":"reference","parent_table_name":"x_2228927_asset_0_loan_request","column_name":"approved_by","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"0aea892b-5eb4-4bf5-9ef9-3223a35bda96":["record"]},"attributes":null},{"name":"Created or Updated_1.current.requested_by.manager","label":"Trigger - Record Created or Updated➛Loan Request Record➛Requested By➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"0e005d72-9e65-4de0-8cdf-91c5f489f216":["approval_reason"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Loan Request Record","reference":"x_2228927_asset_0_loan_request","reference_display":"Loan Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"0aea892b-5eb4-4bf5-9ef9-3223a35bda96":["record"],"945361e5-ccba-48c8-ae35-94c3375bbb72":["record"],"48e7d422-c4a5-42ae-a431-d813869f4298":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Loan Request Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_2228927_asset_0_loan_request","column_name":"status","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"f63039e2-3909-45d2-b7a6-d70113f17a32":["condition"],"54ca8642-3066-4af5-b45c-6cf790f6fd09":["condition"]},"attributes":null}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Loan Request Approval Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:16:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b193e742f2f03108d012cba6fa4e391</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>Loan Request Approval Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name>sys_hub_flow_2b193e742f2f03108d012cba6fa4e391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:49:10</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>9d1c5fb82f2343108d012cba6fa4e331</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2b193e742f2f03108d012cba6fa4e391^sys_idNOT IN27193e742f2f03108d012cba6fa4e396"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2b193e742f2f03108d012cba6fa4e391</id>
+        <name>Loan Request Approval Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:16:18</sys_created_on>
+        <sys_id>27193e742f2f03108d012cba6fa4e396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:16:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=27193e742f2f03108d012cba6fa4e396"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2b193e742f2f03108d012cba6fa4e391^sys_idNOT IN5b79bab42f2f03108d012cba6fa4e30f,6779fab42f2f03108d012cba6fa4e318"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</model>
+        <model_id>2b193e742f2f03108d012cba6fa4e391</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2b193e742f2f03108d012cba6fa4e391</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:17:55</sys_created_on>
+        <sys_id>5b79bab42f2f03108d012cba6fa4e30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:17:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5b79bab42f2f03108d012cba6fa4e30f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</model>
+        <model_id>2b193e742f2f03108d012cba6fa4e391</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2b193e742f2f03108d012cba6fa4e391</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:17:56</sys_created_on>
+        <sys_id>6779fab42f2f03108d012cba6fa4e318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:17:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6779fab42f2f03108d012cba6fa4e318"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2b193e742f2f03108d012cba6fa4e391^sys_idNOT INb5c897342f2343108d012cba6fa4e37b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 12:34:37</sys_created_on>
+        <sys_id>b5c897342f2343108d012cba6fa4e37b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:36:36</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91ZW2/iOBT+K1GediRGygUK9G0GOtpK3VZLmd2Hqhs5iQ3WGJtxnLRM1f++di4kJA6FAqO2T4jj23c+n/Md27l7MgnwITHPzRGjIRaYUbNjYiogp4BMV0som4KiKZJtC0BDIBhfmecIkAh2TMTZYgoXSwIEXBsZDyE3z23L6pgJIDG8XUWXoZxMTkHBYmNaM+8ibf9d/C3/hTiSs63+2TAGc0xCDql5fnffMZeAy1mEWuNpjfcK0x/ZEpudsVr47AyAEAIrcG3XcSzLGXRt/8z1bSd0AfSRHKXjQgNWaGhRtqv6cNVQJQI+CkhDGK5ZapLJIQhvKCkNc+lc5tMCPEb4l1y5a6nJOERQehjArHX918vZy8xoDAS4FTwORMxhQQ7DAYwybkKIQEzEqGrLOtwsU3/TIQL4pBjNSLyg1xkt5nqCYrOkJY4kCLhUrirscnEVJbdz9jApQH7DNKUld5KwAJD1PyAEx34sFJwn8wFQEXmCeSAMvQrn56aaWPHCQkjG5XrSjmczyD1Ml7GIzOeOGa2iEQFRVKKWdHk/Y7Vo5kM+2ksdzrxV4wKOl+JLIHBShPZzp8wZHlM5wFtvazNzUiLXlF/hSOK7e5JkwJ9xtnefbclNQV7uESoiaRJTg1EjiLlkTRgyWoxiMSMFqSIMXS7ALHdLTkxgICohhr5H1X9/4SjCdFZxpg1L2qEJhqyqiDKmDsNwf0xRaW5JUvOnJi5HUBbbRsiHyLH6Sldsy/WRbfWtHkCha1mBU1GWJrxW3KIWQhsKUxhPoi7H0ZYyTbYFTn13coesaprtlAXJZgoVxDzrJO4gaPaRoDnPTaV195LadURn5vFmYG9zrabQRc69VqJBmAA5Iix83F9xdxRbRNiDlPXDhRYxDmecxTSsK5xawsDyd6PHaSTWB8GP7SjKHsYf+TZ/emtyW25KEeiArk4itC6y/SHsQkvqqyul1e8Nh34AHIT6Z33o2DWhLYFp0X4sgX0hYhJdyLWJrTYHEl3q7CGzBwBsSO7eAA8X2zymtVKbtb1XUX2YQ+pJ8NwjSjYb2jojOIRF23Glo7F0UorF8eUDDYZBz+73g768/Un5QF3oA7vr9MCwf+YOejX5aIDbBlxouKoKylVm+i23QRkmKbYWYfmeNb2Bm+H7SpEICqHq6MGHj3Q4yNar1H210UaqbowbapOMy7KjcQtlFU+fH051GGFi3jiGSCRfpX0DiTrkXjP6WYPuhNdRKm9HuxDXguytHZpqEZVsbsIJ7qiwO+gNkavXPjTUaV8Jrx34xzlE7RhFSWs86k5Tu+Z0opWG1uPPK9KyFmHVc9GWg9uxSLGPTopzOlLcgw+LRRq3XsxfA/ZdF8/0rHS0Csoo9BjS1gCMjPz9F4aGvzLEHEq2ibwwyJUNBeOERSq7CDRKqDQb+YHsZNVR7UmdlDEzZIPBfwstpymRtbg59QsDDPug13NbrgjD+guDDuILHnycgrl3dCW6YN1aNfebtz6ntm5WcnEzmHasiEf1Wl8WD/NaWxhf8vrwkrftfUSD4j0Ws2n+el4rXilHXpr2G8mZf/fcpoCt+lf/BvHoOY4zGDp9T3oEhWd5hAHqcVUN0oeFmhReyVZjsm49VBYDFIChA1u+nVtWRRYLkmqOCA1XVelLhxnXWUNJzzbxy/jdRfsG7+lz+aGpgDCRO+plTEcs5qnLk4vRzWTs/ftlOvrzYuJNLm6nk8vR9GL8ylTJWfuGIVEBQuOFn+a1LoXu/wd8SMf7ZyIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2b193e742f2f03108d012cba6fa4e391^sys_idNOT IN092213f42fef03108d012cba6fa4e3d3,a3dd0fbc2faf03108d012cba6fa4e31e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 12:05:37</sys_created_on>
+        <sys_id>092213f42fef03108d012cba6fa4e3d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:42:04</sys_updated_on>
+        <ui_id>48e7d422-c4a5-42ae-a431-d813869f4298</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXW/aPBj9K8jXlDkJCaF3VVGlTfuQ2m43pYqM7bSejMPiZCtD/Pf3cex8DBijb6m0Tr2p+nzYOT4+R7a5WSHB0CniwygI4c8oDbDnezjmURzTMSY0jqJwGKA+UmTOoZMsFnn2ncgk50RnCgoQlKYC/zKhF5Isv7QZei8ky7lCpze3fbQgOcxS8BydrjZKh8KQZMYltJ45HL3LGsdvARbLhSnoIhfqzsXv3TRXdTLLmYHl9xF/KLhiHPCkRGreR3OiGCmyfNlkYGr2Sck2cS9UYRc8Jw9a/ITveRE2jSmHJVLHRhMmjimbTiekIICkpEWZN8RlgnJtyWE8JaUszrs52/BpUQhYZDWkIDNZj85kOVcfLSOomaCzMaUGEHxhVmqgu3WkV/fZj8sa5YVQFSmuKDNKZBORAqiblYXBs0KluN7FKpd8DvMnc9gVyCRma0Q1J0CcD+4kBINUZj8AixZ3akCoWc8A+CaDC8hPqvQXkguzuA8wDQzuu891N7UUn5X4VvK3RkeRP4vGOGYnLMWzk2EchCeEcnzCIy/kIYto6AVo3Ud6qc8l0bolCnYo+VaaZVraHEGJ5dgMoblYFGcA8zt3XKz7zkXYS30+Hvt45mEcYByHFMcBnwWjaBQQFu8QaSq4ZMc10QEotkx04WD8Dp6zUBUmVdOvNqrG9z7awtGtFGP8krwEH3+KlZ7HM49Xu6XgD5Kne8XGOwfH16zM1fMo/gAQteLfWRSbgt8E93/0Hrzq/d/X+yjeJzWKW0nlnIIwOkJfrc5h8wvOEm9AyxxoKtbrI6j/AEi1+i9rTJsYnd5ZRstqLwTbEPzEVXpvJ63i8X7FW10cIvjAf5X7Xyl3Gu7TVjpupcRKIAnU3RX8FFnsU3Q6RSpTfIr6U2S6EqOtKg0dgLApVLnV2sZlTtxwrxO2YxlZ6qpT03vOSmmzv2SSSvoufwy3HcBI7bZJyXsTS8k2SfWjpMZpWRFbJ82Va6hmenMtuidOeLQTZ/iSzpunv1WS+oJrfAB2fraXyvHfGMO9+uMdsTWXeJopJgxY3TGnvfpzfaaWn292HE2DnMNrSpvcbDkAVZE7nq/Xt9sWesJMj7PeAUtvDjpwjP4TFc6C7Q8GblDXfu3PDK7orDc81tH3wu56T/XeS7HZjO69VNFWW5bN1lgPie/78dgfJYCGFwlOZEZU4kywbZ/3UO1dNtXHWeIAmLUlrh3ODdjOBFW466VTDdt46XiPPHesG3aK/1X6f430b/8D8C0u/w0WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=092213f42fef03108d012cba6fa4e3d3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>54ca8642-3066-4af5-b45c-6cf790f6fd09</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 11:46:57</sys_created_on>
+        <sys_id>a3dd0fbc2faf03108d012cba6fa4e31e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:49:00</sys_updated_on>
+        <ui_id>0aea892b-5eb4-4bf5-9ef9-3223a35bda96</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WVyW7bMBCGXyXg2TJEyrZk34oEAQqkKdC0vRQBMSKHCQFqKUWlcY28e0lJUSxn6YLk0KOGy/zzz3zUtx3RkmzIgmZSrhWNFaU0pvGSMpphhrlIVykmGZmREgr0O8vKaaUFOF2VPnoDpg1hVKt1DOmCKUjjhMaZjCkTOawULDBZLPxWqZvawPbrcMJHxLU20mJJNt8uZ6QG61M4tGSzO1j6U40GcjR+6/lU5NPS3bYOUYsKfSKBQ+hsuOPTXryyMshKZgRvHZYSvR4FpsEZKaCU4Cq7JRtnWx+wCPJjabbjjmtdur7eAm4b/dMnTdhsL++GNNsGb7B0HAvQhoMYJI57+GDe49rUCTi48KmFa+3oa6UFNr13EhW0xh3vx/oNH+vuju6Ig9y8pERUpi3K895IUAqFQ8mVRiN5VfLuDBmT7fW4bbx4rINpwYbeI3VxXf0YDT7VZWfv4JepBJjxS10gWHF9GjKFHgYFMwLOWZ23LhS0mzZ2Q0KOkFl/fqadaLAINRZQ17q84rWtbnQnwddZzK+M/5grU/3wyht9Vc57G+a+0TA/9fGTLvwVrA62ffDX+MP3GQ9mqkHHB1t4uICryhYQJqKrsDv2pdTfW3zfTfmaYpqwLFqvmIg8O8sol0kSUZoLREDFJCV3s9CoYwNNM7SkHxb+vQ3Wka4Tg+e89yQI5Z174bCwunbvfFU3ODh9N7t/CuRLmLG9p8Ci8GDsPQK73bGf/jAYdC5a6x1wd3evQf7vJZmxzYOmQ40D7bISbdd7LQ94PxlWjt6fPBBPXyZ+iPwL8s/Q/fpEH8L7JpROeZySNzX2zdmbdnjClqRxmqxjEaVsmUSLWECUZzKPIGdquVisslX+tmxlL//C2MPc7t35wNctZ4xla5ZyL84/KzE3FZTcoi+wcY9BO/OrR5/G1b+D7g+03kP3uRu1p7UP3D2Kne2fPTrvFwbq2F9S14/rE9Bl8X8E3fjDexXqJr6+OXST9k6YE3meqxzXkf9/+f9ZilmUMUgjXMYiUSyJ41T9A3PPkXb5CyIObBfSCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a3dd0fbc2faf03108d012cba6fa4e31e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2b193e742f2f03108d012cba6fa4e391^sys_idNOT IN5945877c2f6f03108d012cba6fa4e3b1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9d45877c2f6f03108d012cba6fa4e3b0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Loan Request Approval Flow">2b193e742f2f03108d012cba6fa4e391</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 11:09:23</sys_created_on>
+        <sys_id>5945877c2f6f03108d012cba6fa4e3b1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:43:33</sys_updated_on>
+        <ui_id>54ca8642-3066-4af5-b45c-6cf790f6fd09</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K5OfI5SQglbeEFWlSdsqrVVftiq6sR2w5tiZP6AZ4r/vOnEAdaDRdY97w+d++Jzre8KWaO8a7+yDnlsrlorMvj4lRKiA4e8tEYzMyDVMqkmWTmg+nubjNB2/v8rKaV5mY5YDv5qShCioOWZSrZhwQiuE1iB9wL75NM0ZNI3Ra84wwIRtJLSP5+J0JSQzPJJpwGBvxw2ZbV+ELiUnoeQSUxdH7E4Qdm0TIOuMUMt4/hhL7wdQGxaojNOE8GfHFUPKswqk5QmpQTFw2rRk5oxHwHBgd0q2+4yVUA67kZD7bMVPHjqlacisOOqivI/uj0UcVg9XN+AAqXjqvImpdKUF5bafCOMVeOkWx1ifcNd0KrsSB6UcqrX0tfrcD4PsGwxvg4i3SII3QWngHoVU9yu9+TKwvBWqm0oMSk1B7k/gcHald4HPlnDJa2xU1PjgONEivLroipFLPVpKPIwqqTd4adjIEdBAfISDhdEt4jcd/AhGBBWfsA0W4y7YwlIjmkFbdznZJcS2diHB2oNGHG7xwweGveKorejHE0q6RnO8eM2jjF0SvVClUGXXNDu9bpCfWK2iAw6GmJ+1wvxvTXABq99M8K7f7fN8X+OH7A9+iMhFhphM/vvhzX4INEuwghbd1xzbhU/SPzTEU1jo/tL9sKmwyO0hYB+G/5AQaHGjBD2GNtp8D6oO2O4Xv1+tWo0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2b193e742f2f03108d012cba6fa4e391</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:17:56</sys_created_on>
+        <sys_id>2b79fab42f2f03108d012cba6fa4e31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:17:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2b193e742f2f03108d012cba6fa4e391</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:17:55</sys_created_on>
+        <sys_id>6f79fab42f2f03108d012cba6fa4e312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:17:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2b193e742f2f03108d012cba6fa4e391"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2b193e742f2f03108d012cba6fa4e391"/>
+</record_update>

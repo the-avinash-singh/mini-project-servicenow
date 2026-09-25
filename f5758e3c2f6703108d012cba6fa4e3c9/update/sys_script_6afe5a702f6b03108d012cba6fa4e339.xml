@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_2228927_asset_0_loan_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_2228927_asset_0_loan_request">statusVALCHANGES^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Sync Asset Status on Loan Change</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if(current.status==previous.status){
+		return;
+	}
+	var utils=new AssetLoanUtils();
+	
+	if(current.status=="approved" && !utils.isAssetAvailable(current.asset.toString())){
+		gs.addErrorMessage('This asset is no longer available and cannot be approved.');
+		current.setAbortAction(true);
+		return;
+	}
+	//get the asset record
+	var assetRecord=new GlideRecord('x_2228927_asset_0_asset');
+	if(!assetRecord.get(current.asset)){
+		gs.error('Asset Loan Tracker: Could not find asset for loan request ' + current.number);
+        return;
+	}
+	if(current.status=="on_loan" || current.status=="approved"){
+		assetRecord.status="on_loan";
+		assetRecord.assigned_to=current.requested_by;
+		assetRecord.update();
+		
+	}else if(current.status=="returned"){
+		assetRecord.status = 'available';
+        assetRecord.assigned_to = '';
+        assetRecord.update();
+
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 08:39:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6afe5a702f6b03108d012cba6fa4e339</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Sync Asset Status on Loan Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name>sys_script_6afe5a702f6b03108d012cba6fa4e339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 10:10:26</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6afe5a702f6b03108d012cba6fa4e339"/>
+</record_update>
