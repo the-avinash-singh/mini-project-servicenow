@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint>asset loan admin menu</hint>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 06:05:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>447f6b162fe30f108d012cba6fa4e3ba</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Asset loan admin</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name>sys_app_application_447f6b162fe30f108d012cba6fa4e3ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 06:10:51</sys_updated_on>
+        <title>Asset loan admin</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</application>
+        <file_path/>
+        <instance_id>dedc869fff758b5cc80bf8e4fc4fd977</instance_id>
+        <instance_name>dev424214</instance_name>
+        <name>sys_app_application_447f6b162fe30f108d012cba6fa4e3ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint>asset loan admin menu</hint><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 06:05:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>447f6b162fe30f108d012cba6fa4e3ba</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Asset loan admin</sys_name><sys_overrides/><sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package><sys_policy/><sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope><sys_update_name>sys_app_application_447f6b162fe30f108d012cba6fa4e3ba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 06:10:51</sys_updated_on><title>Asset loan admin</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>193931701</payload_hash>
+        <record_name>Asset loan admin</record_name>
+        <reverted_from/>
+        <source>1cc0ae4e2f6f4b108d012cba6fa4e39a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 06:10:51</sys_created_on>
+        <sys_id>05e03f962fe30f108d012cba6fa4e309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0e6a338d00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 06:10:51</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>81e03f96f3e30f10b5110ee343e6af08</update_guid>
+        <update_guid_history>81e03f96f3e30f10b5110ee343e6af08:193931701,6e703f96cbe30f1087164bf874046a51:-2091284272,94ff6fd242e30f10df370deb33abf30d:193931701,599faf164ce30f103dc1518eeddcac19:-1121948438</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Asset loan admin">5fa1ff1a2fe30f108d012cba6fa4e32b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 06:14:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>2fa6cf7ceb334b18a82dc6a824249da9</sys_id>
+        <sys_metadata>447f6b162fe30f108d012cba6fa4e3ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Asset loan admin</sys_name>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_scope_delete display_value="">12874bfa9a1d40a08be558095200bb64</sys_scope_delete>
+        <sys_update_name>sys_app_application_447f6b162fe30f108d012cba6fa4e3ba</sys_update_name>
+        <sys_update_version display_value="sys_app_application_447f6b162fe30f108d012cba6fa4e3ba">05e03f962fe30f108d012cba6fa4e309</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 06:14:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
