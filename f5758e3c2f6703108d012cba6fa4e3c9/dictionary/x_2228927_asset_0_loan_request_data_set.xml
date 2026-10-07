@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="161e8dc42ff7c7508d012cba6fa4e331" extends="sys_import_set_row" label="Loan Request Data set" max_length="40" name="x_2228927_asset_0_loan_request_data_set" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approved By" label="Approved By" max_length="40" name="u_approved_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Return Date" label="Return Date" max_length="40" name="u_return_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Due Date" label="Due Date" max_length="40" name="u_due_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Date" label="Request Date" max_length="40" name="u_request_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset" label="Asset" max_length="40" name="u_asset" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested By" label="Requested By" max_length="40" name="u_requested_by" type="string"/>
+    </element>
+</database>
