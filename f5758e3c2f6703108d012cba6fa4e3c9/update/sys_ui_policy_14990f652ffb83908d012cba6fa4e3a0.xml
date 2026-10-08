@@ -21,22 +21,22 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>show hide return date loan request</short_description>
+        <short_description>Show hide return date loan request</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-10-07 06:49:33</sys_created_on>
+        <sys_created_on>2026-10-08 05:39:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5cef02dd2f3b03908d012cba6fa4e367</sys_id>
+        <sys_id>14990f652ffb83908d012cba6fa4e3a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>show hide return date loan request</sys_name>
+        <sys_name>Show hide return date loan request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
-        <sys_update_name>sys_ui_policy_5cef02dd2f3b03908d012cba6fa4e367</sys_update_name>
+        <sys_update_name>sys_ui_policy_14990f652ffb83908d012cba6fa4e3a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-07 06:49:33</sys_updated_on>
+        <sys_updated_on>2026-10-08 05:39:46</sys_updated_on>
         <table>x_2228927_asset_0_loan_request</table>
         <ui_type>0</ui_type>
         <view/>

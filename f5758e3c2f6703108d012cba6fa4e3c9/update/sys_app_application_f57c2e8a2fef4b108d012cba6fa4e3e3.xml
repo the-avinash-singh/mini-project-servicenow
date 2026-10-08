@@ -2,19 +2,19 @@
     <sys_app_application action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
-        <description/>
+        <description>Menu Item to manage the loan request and Asset</description>
         <device_type>browser</device_type>
         <hint/>
         <name/>
         <order>100</order>
-        <roles/>
+        <roles>x_2228927_asset_0.user</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-27 06:33:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f57c2e8a2fef4b108d012cba6fa4e3e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Loan Assets</sys_name>
         <sys_overrides/>
         <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
         <sys_update_name>sys_app_application_f57c2e8a2fef4b108d012cba6fa4e3e3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-27 06:33:49</sys_updated_on>
+        <sys_updated_on>2026-10-08 10:43:26</sys_updated_on>
         <title>Loan Assets</title>
         <view_name/>
     </sys_app_application>

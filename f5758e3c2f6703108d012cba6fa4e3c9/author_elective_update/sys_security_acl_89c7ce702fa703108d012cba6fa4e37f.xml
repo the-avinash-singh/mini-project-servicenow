@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_2228927_asset_0_asset</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 06:40:40</sys_created_on>
+        <sys_id>89c7ce702fa703108d012cba6fa4e37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2228927_asset_0_asset</sys_name>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_update_name>sys_security_acl_89c7ce702fa703108d012cba6fa4e37f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:40:40</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</application>
+        <file_path/>
+        <instance_id>dedc869fff758b5cc80bf8e4fc4fd977</instance_id>
+        <instance_name>dev424214</instance_name>
+        <name>sys_security_acl_89c7ce702fa703108d012cba6fa4e37f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_2228927_asset_0_asset</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-23 06:40:40</sys_created_on><sys_id>89c7ce702fa703108d012cba6fa4e37f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_2228927_asset_0_asset</sys_name><sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package><sys_policy/><sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope><sys_update_name>sys_security_acl_89c7ce702fa703108d012cba6fa4e37f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-23 06:40:40</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>892634749</payload_hash>
+        <record_name>x_2228927_asset_0_asset</record_name>
+        <reverted_from/>
+        <source>3d758e3c2f6703108d012cba6fa4e3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 06:40:41</sys_created_on>
+        <sys_id>1dc7ce702fa703108d012cba6fa4e3a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0ccfebd230000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 06:40:41</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d9c7ce7073a70310e1dcf3f363df159f</update_guid>
+        <update_guid_history>d9c7ce7073a70310e1dcf3f363df159f:892634749</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 09:38:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>08b113c720204f8d8fe36cdf005884c9</sys_id>
+        <sys_metadata>89c7ce702fa703108d012cba6fa4e37f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2228927_asset_0_asset</sys_name>
+        <sys_package display_value="Asset Loan Tracker" source="x_2228927_asset_0">f5758e3c2f6703108d012cba6fa4e3c9</sys_package>
+        <sys_parent display_value="x_2228927_asset_0_asset">88b78a702fa703108d012cba6fa4e365</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Asset Loan Tracker">f5758e3c2f6703108d012cba6fa4e3c9</sys_scope>
+        <sys_scope_delete display_value="">12874bfa9a1d40a08be558095200bb64</sys_scope_delete>
+        <sys_update_name>sys_security_acl_89c7ce702fa703108d012cba6fa4e37f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_89c7ce702fa703108d012cba6fa4e37f">1dc7ce702fa703108d012cba6fa4e3a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 09:38:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
